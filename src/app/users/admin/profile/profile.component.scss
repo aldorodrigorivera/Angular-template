@@ -10,11 +10,18 @@
   padding-bottom:30px
 }
 
-.__mainImg{
+.__mainImg {
   height: 500px;
   border-radius: 40px;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-image: url(https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+.__prom {
+  color: #fff;
+  font-weight: 100;
+  font-size: 40px;
+  text-align: right;
+  padding: 30px
 }
