@@ -1,0 +1,58 @@
+.__container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+
+
+.__sidenav-content {
+  display: flex;
+  height: auto;
+}
+
+.__sidenav {
+  padding: 10px;
+  width: 300px;
+}
+
+.__spacer {
+  flex: 1 1 auto;
+}
+
+.__full{
+  width: 100%;
+  height: 100%;
+}
+.__spacer {
+  flex: 1 1 auto;
+}
+.__toolbarColors {
+  background-color: #ffffff;
+  color: #000000;
+}
+.__title{
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+}
+.__itemList{
+  height: 65px!important;
+}
+.__sideItem {
+  width: 100%;
+  height: 50px;
+  text-align: left;
+}
+.__sideItem:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.__icon {
+  margin-right: 15px;
+}
+
+.__mainContent {
+  background-color: #ffffff;
+}

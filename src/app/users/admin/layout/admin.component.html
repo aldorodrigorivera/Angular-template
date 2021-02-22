@@ -1,0 +1,49 @@
+<mat-drawer-container class="__container" autosize>
+  <!-- SIDE-BAR -->
+  <mat-drawer #drawer class="__sidenav" mode="side">
+    <mat-list role="list">
+      <mat-list-item  role="listitem" class="__itemList">
+        <span class="__title">BVBR SHOP</span>
+      </mat-list-item>
+      <mat-list-item  role="listitem" class="__itemList">
+        <button class="__sideItem" (click)="u.goTo('/admin/profile')" mat-button>
+          <mat-icon class="__icon">person</mat-icon>
+          PROFILE
+        </button>
+      </mat-list-item>
+      <mat-list-item  role="listitem" class="__itemList">
+        <button class="__sideItem" (click)="u.goTo('/admin/config')" mat-button>
+          <mat-icon class="__icon">build</mat-icon>
+          CONFIGURATION
+        </button>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item  role="listitem" class="__itemList">
+        <button class="__sideItem" (click)="showFiller = !showFiller" mat-button>
+          <mat-icon class="__icon">logout</mat-icon>
+          LOGOUT
+        </button>
+      </mat-list-item>
+    </mat-list>
+    <p class="__center" *ngIf="showFiller">Are you sure to logout?</p>
+  </mat-drawer>
+
+  <!-- TOOLBAR -->
+  <div class="__sidenav-content __spacer">
+    <mat-toolbar class='__toolbarColors'>
+      <!-- AMBURGUESA -->
+      <button mat-icon-button class="example-icon" (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span style="padding-left: 20px;">NG CORE</span>
+      <span class="__spacer"></span>
+      <span>11 . DIC . 2121</span>
+    </mat-toolbar>
+  </div>
+
+  <div class="__full __mainContent" >
+   <router-outlet></router-outlet>
+  </div>
+
+
+</mat-drawer-container>
