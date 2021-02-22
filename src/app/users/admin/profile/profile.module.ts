@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProfileComponent } from './profile.component';
+import { MaterialDesingModule } from 'src/app/material/material.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialDesingModule
   ],
   declarations: [ProfileComponent]
 })
