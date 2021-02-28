@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { AdminRoutes } from './admin.routing';
 import { ConfigModule } from '../config/config.module';
 import { ProfileModule } from '../profile/profile.module';
+import { DashboardModule } from '../dashboard/dashboard.module';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { ProfileModule } from '../profile/profile.module';
     MaterialDesingModule,
     NavbarModule,
     ProfileModule,
+    DashboardModule,
     ConfigModule,
     RouterModule.forChild(AdminRoutes),
   ],

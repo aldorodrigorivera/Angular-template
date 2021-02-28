@@ -6,6 +6,12 @@
         <span class="__title">BVBR SHOP</span>
       </mat-list-item>
       <mat-list-item  role="listitem" class="__itemList">
+        <button class="__sideItem" (click)="u.goTo('/admin/dashboard')" mat-button>
+          <mat-icon class="__icon">stream</mat-icon>
+          DASHBOARD
+        </button>
+      </mat-list-item>
+      <mat-list-item  role="listitem" class="__itemList">
         <button class="__sideItem" (click)="u.goTo('/admin/profile')" mat-button>
           <mat-icon class="__icon">person</mat-icon>
           PROFILE
