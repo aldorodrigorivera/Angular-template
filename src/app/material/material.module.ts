@@ -8,6 +8,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatSelectModule } from '@angular/material/select';
 
 const modules = [
   MatSliderModule,
@@ -18,6 +19,7 @@ const modules = [
   MatListModule,
   MatCardModule,
   MatMenuModule,
+  MatSelectModule
 ];
 @NgModule({
   imports:modules,
