@@ -45,3 +45,38 @@
   padding: 10px 60px;
   font-size: 20px;
 }
+.__cardDashboard {
+  height: 140px;
+}
+
+.__cardTitle {
+  font-weight: 300;
+  font-size: 30px;
+  padding-top: 15px!important;
+  margin: 0;
+}
+.__cardDescription {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.__cardNumber{
+  font-size: 70px;
+  padding-top: 20px!important;
+  font-family: DIN Condensed;
+  margin: 10px;
+}
+
+.__avatar {
+  height: 300px!important;
+}
+
+.mat-menu-panel {
+  max-width: 300px!important;
+}
+
+.mat-menu-content:not(:empty) {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 280px!important;
+}

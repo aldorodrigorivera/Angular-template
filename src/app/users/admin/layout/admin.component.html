@@ -14,24 +14,24 @@
       <mat-list-item  role="listitem" class="__itemList">
         <button class="__sideItem" (click)="u.goTo('/admin/profile')" mat-button>
           <mat-icon class="__icon">person</mat-icon>
-          PROFILE
+          PERFIL
         </button>
       </mat-list-item>
       <mat-list-item  role="listitem" class="__itemList">
         <button class="__sideItem" (click)="u.goTo('/admin/config')" mat-button>
           <mat-icon class="__icon">build</mat-icon>
-          CONFIGURATION
+          CONFIGURACIÓN
         </button>
       </mat-list-item>
       <mat-divider></mat-divider>
       <mat-list-item  role="listitem" class="__itemList">
         <button class="__sideItem" (click)="showFiller = !showFiller" mat-button>
           <mat-icon class="__icon">logout</mat-icon>
-          LOGOUT
+          CERRAR SESIÓN
         </button>
       </mat-list-item>
     </mat-list>
-    <p class="__center" *ngIf="showFiller">Are you sure to logout?</p>
+    <p class="__center" *ngIf="showFiller">¿Estás seguro que deseas salir?</p>
   </mat-drawer>
 
   <!-- TOOLBAR -->

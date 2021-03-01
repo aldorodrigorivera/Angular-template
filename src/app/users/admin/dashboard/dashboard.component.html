@@ -1,30 +1,117 @@
-<div class="row">
-  <div class="col-10 __head">
-    <div class="__head">
-      <span class="__username"> Hi Rodrigo Rivera! </span>
-      <br>
-      <br>
-      <span class="__title">DASHBOARD 💈</span>
-      <br>
-      <br>
+<div style="background-color: white;">
+  <div class="row">
+    <div class="col-10 __head">
+      <div class="__head">
+        <span class="__username"> Hi Rodrigo Rivera! </span>
+        <br>
+        <br>
+        <span class="__title">DASHBOARD 💈</span>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="col-2 __right">
+      <button
+        mat-mini-fab color="white"
+        mat-icon-button
+        [matMenuTriggerFor]="menu"
+        matBadge="4" matBadgeOverlap="false">
+        <mat-icon>notifications</mat-icon>
+      </button>
     </div>
   </div>
-  <div class="col-2 __right">
-    <button mat-mini-fab color="white">
-      <mat-icon>notifications</mat-icon>
-    </button>
-  </div>
+  <!-- MENU MENU MENU MENU MENU MENU MENU MENU MENU  -->
+    <mat-menu #menu="matMenu" class="__menu">
+      <button mat-menu-item *ngFor="let not of notifications" [disabled]="!not.active">
+        <mat-icon>calendar_today</mat-icon>
+        <span>
+          <strong>{{not.barber}}</strong>
+           | {{not.date}} |
+          <strong>{{not.hour}}</strong>
+        </span>
+      </button>
+    </mat-menu>
+  <!-- MENU MENU MENU MENU MENU MENU MENU MENU MENU  -->
+
+  <!-- ANUNCIO ANUNCIO ANUNCIO ANUNCIO ANUNCIO ANUNCIO ANUNCIO ANUNCIO ANUNCIO  -->
+    <div class="row m20">
+      <div class="__content">
+        <mat-card class="__mainImg mat-elevation-z8">
+          <div class="col-12 __center __promo_content">
+            <span class="__promo_title">6TO SERVICIO GRATIS! 😎</span>
+          </div>
+          <div class="col-12 __center m40">
+            <button mat-button color="white" class="__promo_btn">AGENDAR CITA! </button>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  <!-- ANUNCIO ANUNCIO ANUNCIO ANUNCIO ANUNCIO ANUNCIO ANUNCIO ANUNCIO ANUNCIO  -->
+
+  <!-- NUMEROS NUMEROS NUMEROS NUMEROS NUMEROS NUMEROS NUMEROS NUMEROS NUMEROS  -->
+    <div class="row __content">
+        <div class="col-md-4 col-sm-12 __cardDashboard m40">
+          <mat-card class=" __border">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <p class="__cardTitle">Reservaciones</p>
+                <p class="__cardDescription">Realizadas en  {{getMonth()}}</p>
+              </div>
+              <div class="col-md-6 col-sm-12 __right">
+                <h3 class="__cardNumber">65</h3>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+        <div class="col-md-4 col-sm-12 __cardDashboard m40">
+          <mat-card class=" __border">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <p class="__cardTitle">Servicios</p>
+                <p class="__cardDescription">Realizados en  {{getMonth()}}</p>
+              </div>
+              <div class="col-md-6 col-sm-12 __right">
+                <h3 class="__cardNumber">55</h3>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+        <div class="col-md-4 col-sm-12 __cardDashboard m40">
+          <mat-card class=" __border">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <p class="__cardTitle">Ingresos</p>
+                <p class="__cardDescription">Genereados en {{getMonth()}}</p>
+              </div>
+              <div class="col-md-6 col-sm-12 __right">
+                <h3 class="__cardNumber">35.5K</h3>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+    </div>
+  <!-- NUMEROS NUMEROS NUMEROS NUMEROS NUMEROS NUMEROS NUMEROS NUMEROS NUMEROS  -->
+
+  <!-- BARBEROS BARBEROS BARBEROS BARBEROS BARBEROS BARBEROS BARBEROS BARBEROS BARBEROS  -->
+    <div class="row __content m40">
+      <span class="__title">BARBEROS</span>
+      <div class="col-md-4 m20" *ngFor="let barber of barbers">
+        <mat-card class="__border">
+          <mat-card-header>
+            <mat-card-title>{{barber.name}}</mat-card-title>
+            <mat-card-subtitle>{{barber.place}}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src={{barber.avatar}} class="__avatar"/>
+          <mat-card-actions>
+            <button mat-button>Reservar</button>
+            <button mat-button>Servicios Realizados: ({{barber.count}})</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  <!-- BARBEROS BARBEROS BARBEROS BARBEROS BARBEROS BARBEROS BARBEROS BARBEROS BARBEROS  -->
 </div>
-<div class="row m20">
-  <div class="__content">
-    <mat-card class="__mainImg mat-elevation-z8">
-      <div class="col-12 __center __promo_content">
-        <span class="__promo_title">6TO SERVICIO GRATIS! 😎</span>
-      </div>
-      <div class="col-12 __center m40">
-        <button mat-button color="white" class="__promo_btn">AGENDAR CITA! </button>
-      </div>
-    </mat-card>
-  </div>
+<div class="m40 mb20 __right">
+  <p>BLVCK DOG (2021)</p>
 </div>
 

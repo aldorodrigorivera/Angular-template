@@ -6,7 +6,8 @@ import { MatToolbarModule } from 'node_modules/@angular/material/toolbar';
 import { MatIconModule } from 'node_modules/@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { MatCardContent, MatCardModule } from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
 
 const modules = [
   MatSliderModule,
@@ -16,6 +17,7 @@ const modules = [
   MatSidenavModule,
   MatListModule,
   MatCardModule,
+  MatMenuModule,
 ];
 @NgModule({
   imports:modules,

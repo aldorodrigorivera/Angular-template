@@ -1,12 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 html, body {
   height: 100%;
 }
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif!important;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff!important;
+  // font-family: 'Roboto', sans-serif!important;
   // font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 .__center{
@@ -18,7 +21,9 @@ body {
 .__right{
   text-align: right;
 }
-
+.__border{
+  border-radius: 20px!important;
+}
 .m40 {
   margin-top: 40px;
 }
