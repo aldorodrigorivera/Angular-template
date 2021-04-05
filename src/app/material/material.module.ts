@@ -9,6 +9,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSelectModule } from '@angular/material/select';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const modules = [
   MatSliderModule,
@@ -19,7 +20,8 @@ const modules = [
   MatListModule,
   MatCardModule,
   MatMenuModule,
-  MatSelectModule
+  MatSelectModule,
+  MatDialogModule,
 ];
 @NgModule({
   imports:modules,
